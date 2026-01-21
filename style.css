@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+p {
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+span {
+  font-size: 18px;
+  color: #2cc7c1;
+  border-radius: 4px;
+  padding: 8px;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.btn-primary {
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #6a7079;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s;
+}
+.btn-primary:hover {
+  background-color: #7792c1;
+}
+.btn-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #2cc7c1;
+}
+.tabs-form {
+  max-width: 566px;
+  border: 3px solid rgb(236, 236, 236);
+}
+.tab-btn {
+  padding: 24px;
+  cursor: pointer;
+  color: rgb(171, 177, 186);
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+}
+.tab-btn.active {
+  background-color: #fff;
+  color: #9097a1;
+  padding: 24px;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+}
+.card {
+  color: rgb(119, 122, 125);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  transition: color 0.2s;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 4px;
+}
+
+/* BEGINNINg */
+
+.eventide {
+  min-height: 100vh;
+  background: url(back.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+}
+.eventide-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+.eventide-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 630px;
+}
+.eventide-data h1 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 32px;
+}
+.eventide-text {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+}
+.eventide-btns {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+.btn-register {
+  border-radius: 4px;
+  background-color: #6a7079;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Monsterrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s;
+}
+.btn-register:hover {
+  background-color: #7792c1;
+}
+.btn-discover {
+  border-radius: 4px;
+  background-color: #6a7079;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Monsterrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s;
+}
+.btn-discover:hover {
+  background-color: #7792c1;
+}
