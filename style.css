@@ -84,6 +84,7 @@ span {
 }
 .tab-btn {
   padding: 24px;
+  background-color: rgb(236, 236, 236);
   cursor: pointer;
   color: rgb(171, 177, 186);
   font-family: "Ubuntu", sans-serif;
@@ -91,8 +92,7 @@ span {
   font-weight: bold;
   font-size: 18px;
 }
-.tab-btn.active {
-  background-color: #fff;
+.tab-btn-use {
   color: #9097a1;
   padding: 24px;
   cursor: pointer;
@@ -100,6 +100,13 @@ span {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
+}
+.tab-body-text p {
+  font-size: 17px;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(153, 153, 153);
+  padding-bottom: 30px;
+  text-align: left;
 }
 .card {
   color: rgb(119, 122, 125);
@@ -109,17 +116,49 @@ span {
   transition: color 0.2s;
 }
 .text {
+  max-width: 460px;
   display: flex;
   flex-direction: column;
   justify-content: left;
   gap: 4px;
+}
+.text-title {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(130, 134, 137);
+  text-transform: uppercase;
+}
+.text-paragraph {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 22px;
+  color: rgb(130, 134, 137);
+}
+.text-paragraph-2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  color: rgb(130, 134, 137);
+}
+.list {
+  color: rgb(153, 153, 153);
+  font-size: 17px;
+  font-family: "Ubuntu", sans-serif;
+}
+.h2s {
+  color: rgb(130, 134, 137);
+  max-width: 650px;
+  font-size: 22px;
+  font-weight: 300;
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  margin: 0 auto;
 }
 
 /* BEGINNINg */
 
 .eventide {
   min-height: 100vh;
-  background: url(back.jpg);
+  background: url(/images/back.jpg);
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -132,7 +171,7 @@ span {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  gap: 30px;
+  gap: 26px;
 }
 .eventide-info {
   display: flex;
@@ -158,7 +197,7 @@ span {
 .eventide-btns {
   display: flex;
   justify-content: space-between;
-  gap: 16px;
+  gap: 20px;
   align-items: center;
 }
 .btn-register {
@@ -200,4 +239,73 @@ span {
 }
 .btn-discover:hover {
   background-color: #7792c1;
+}
+
+/* GAP */
+
+.goals {
+  padding: 30px 0;
+}
+.goals-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  padding: 100px 0;
+}
+.goals-text {
+  max-width: 480px;
+  max-height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.goals-title h1 {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(130, 134, 137);
+  text-transform: uppercase;
+}
+.goals-text-one {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 22px;
+  color: rgb(130, 134, 137);
+}
+.goals-text-two {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  color: rgb(130, 134, 137);
+}
+.goals-tabs {
+  max-width: 566px;
+  border: 3px solid rgb(236, 236, 236);
+}
+.goals-tabs-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 566px;
+}
+.goals-tabs-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+.body-content-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+.goals-tabs-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.fact-items-li {
+  display: flex;
+  font-size: 17px;
+  color: rgb(153, 153, 153);
+  font-family: "Ubuntu", sans-serif;
+  gap: 10px;
 }
