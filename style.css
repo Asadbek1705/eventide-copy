@@ -35,13 +35,14 @@ body {
   background-color: #fff;
   font-family: "Montserrat", sans-serif;
 }
-span {
+.span {
   font-size: 18px;
-  color: #2cc7c1;
+  background-color: #2cc7c1;
   border-radius: 4px;
-  padding: 8px;
+  padding: 6px;
   font-family: "Ubuntu", sans-serif;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .container {
@@ -94,6 +95,7 @@ span {
 }
 .tab-btn-use {
   color: #9097a1;
+  background-color: #fff;
   padding: 24px;
   cursor: pointer;
   font-family: "Ubuntu", sans-serif;
@@ -105,36 +107,45 @@ span {
   font-size: 17px;
   font-family: "Ubuntu", sans-serif;
   color: rgb(153, 153, 153);
-  padding-bottom: 30px;
   text-align: left;
 }
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 0;
+}
 .card {
+  padding: 0 30px;
   color: rgb(119, 122, 125);
   cursor: pointer;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
   display: flex;
   justify-content: center;
   transition: color 0.2s;
 }
-.text {
-  max-width: 460px;
+.unique-text {
+  max-width: 480px;
+  max-height: 340px;
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  gap: 4px;
+  justify-content: space-between;
 }
-.text-title {
+.unique-title h1 {
   font-size: 32px;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   color: rgb(130, 134, 137);
   text-transform: uppercase;
 }
-.text-paragraph {
+.unique-text-one {
   font-family: "Ubuntu", sans-serif;
   font-size: 22px;
   color: rgb(130, 134, 137);
 }
-.text-paragraph-2 {
+.unique-text-two {
   font-family: "Ubuntu", sans-serif;
   font-size: 18px;
   color: rgb(130, 134, 137);
@@ -144,7 +155,7 @@ span {
   font-size: 17px;
   font-family: "Ubuntu", sans-serif;
 }
-.h2s {
+.h2s h2 {
   color: rgb(130, 134, 137);
   max-width: 650px;
   font-size: 22px;
@@ -152,6 +163,15 @@ span {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
   margin: 0 auto;
+}
+.content-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 170px;
+}
+.content-list p {
+  font-size: 16px;
 }
 
 /* BEGINNINg */
@@ -252,30 +272,6 @@ span {
   gap: 6px;
   padding: 100px 0;
 }
-.goals-text {
-  max-width: 480px;
-  max-height: 340px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.goals-title h1 {
-  font-size: 32px;
-  font-weight: 600;
-  font-family: "Montserrat", sans-serif;
-  color: rgb(130, 134, 137);
-  text-transform: uppercase;
-}
-.goals-text-one {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 22px;
-  color: rgb(130, 134, 137);
-}
-.goals-text-two {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 18px;
-  color: rgb(130, 134, 137);
-}
 .goals-tabs {
   max-width: 566px;
   border: 3px solid rgb(236, 236, 236);
@@ -286,21 +282,23 @@ span {
   max-width: 566px;
 }
 .goals-tabs-body {
+  position: relative;
+}
+.tabs-body-inner {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 25px;
+  justify-content: space-between;
+  gap: 20px;
 }
 .body-content-2 {
   display: flex;
-  justify-content: space-between;
-  gap: 60px;
+  justify-content: start;
 }
-.goals-tabs-list {
+.unique-tabs-list {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  gap: 18px;
 }
 .fact-items-li {
   display: flex;
@@ -308,4 +306,86 @@ span {
   color: rgb(153, 153, 153);
   font-family: "Ubuntu", sans-serif;
   gap: 10px;
+}
+.body-content-2 img {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  z-index: -100;
+}
+
+/* GAP */
+
+.speaker {
+  padding: 30px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.speaker-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+
+.speaker-name h2 {
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(119, 122, 125);
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.3s;
+}
+.speaker-name h2:hover,
+.speaker-inner img:hover {
+  color: #2cc7c1;
+}
+.card-text p {
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(130, 134, 137);
+  text-align: center;
+}
+.card img {
+  border-radius: 100px;
+}
+
+/* GAP */
+
+.schedule {
+  padding: 50px 0;
+}
+.schedule-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.schedule-tabs {
+  max-width: 566px;
+  border: 3px solid rgb(236, 236, 236);
+}
+.schedule-tabs-header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: rgb(236, 236, 236);
+}
+.tabs-body-inner {
+  padding: 30px;
+}
+.text-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.text-button h2 {
+  cursor: pointer;
+  color: #2cc7c1;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 800;
+  font-weight: bold;
 }
