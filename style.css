@@ -389,3 +389,23 @@ body {
   font-weight: 800;
   font-weight: bold;
 }
+
+/* GAP */
+
+.video {
+  padding: 60px 0;
+}
+.video-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* gap */
+
+.gallery {
+  padding: 60px 0;
+}
+.gallery-inner {
+  display: flex;
+  justify-content: space-between;
+}
