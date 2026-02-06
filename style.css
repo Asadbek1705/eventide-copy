@@ -133,6 +133,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+.unique-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .unique-title h1 {
   font-size: 32px;
   font-weight: 600;
@@ -408,4 +414,59 @@ body {
 .gallery-inner {
   display: flex;
   justify-content: space-between;
+}
+
+/* GAP */
+
+.launch {
+  padding: 60px 0;
+  background-color: #f3f3f3;
+}
+.launch-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+.launch-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+}
+.launch-register {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+  background-color: #fff;
+  height: 200px;
+}
+input,
+select {
+  padding: 8px;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  border-radius: 6px;
+  width: 170px;
+  height: 40px;
+}
+.register-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #2cc7c1;
+  border-radius: 6px;
+}
+.register-name input {
+  border: 0;
+  color: #6a7079;
+}
+.register-email input {
+  background-color: #efefef;
+}
+.register-select select {
+  background-color: #2cc7c1;
+  border: 0;
+  color: #fff;
 }
