@@ -473,3 +473,99 @@ select {
   border: 0;
   color: #fff;
 }
+
+/* GAP */
+
+.footer {
+  background-color: #525b64;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 90px 0;
+  gap: 60px;
+}
+.footer-static {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+.footer-static-title {
+  display: flex;
+  gap: 10px;
+  width: 450px;
+}
+
+.footer-static-title h1,
+.footer-static-title h2 {
+  font-size: 24px;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  text-transform: capitalize;
+}
+.footer-static-title h2 {
+  font-weight: 400;
+}
+.footer-static-text p {
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  color: #cdd0d2;
+  text-align: left;
+  line-height: 30px;
+}
+.footer-static-icon {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-help {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.footer-help-title h2 {
+  font-size: 20px;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: capitalize;
+}
+.footer-help-text p {
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  color: #cdd0d2;
+  line-height: 30px;
+}
+
+.footer-touch {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.footer-touch-title h2 {
+  font-size: 20px;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+  text-transform: capitalize;
+}
+.footer-help-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 6px;
+}
+.footer-help-email a {
+  text-decoration: none;
+  color: #2cc7c1;
+}
+
+.copyright {
+  background-color: #3f464c;
+}
+.copyright h2 {
+  color: #cacaca80;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  padding: 8px 0;
+}
